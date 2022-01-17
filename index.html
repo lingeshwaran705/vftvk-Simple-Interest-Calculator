@@ -1,16 +1,49 @@
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Interest Calculator</h1>
+
+      <main>
+        <section>
+          <span class="box">Amount </span>
+          <input type="number" id="principal" />
+        </section>
+
+        <section>
+          <span class="box">Intrest Rate</span>
+          <input
+            type="range"
+            onchange="calcRange(this.value)"
+            min="0"
+            step="0.1"
+            value="3.5"
+            max="10"
+            id="rate"
+          /><span id="range-result"></span>
+        </section>
+
+        <section>
+          <span class="box">No. of Years</span>
+          <input type="number" id="years" />
+        </section>
+
+        <section id="result"></section>
+
+        <button class="compute-btn" onclick="compute()">Compute Intrest</button>
+      </main>
+
+      <footer><i class="far fa-copyright"></i>Everyone can get Rich</footer>
+    </div>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+  </body>
 </html>

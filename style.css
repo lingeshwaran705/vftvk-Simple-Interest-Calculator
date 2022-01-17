@@ -1,4 +1,82 @@
-body {background-color:tan;}
-h1{color:green;}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
+body {
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.container h1 {
+  padding: 10px 10px 20px 10px;
+  color: gray;
+  font-family: "Roboto slab", serif;
+}
+
+.box {
+  width: 120px;
+  display: inline-block;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+main input {
+  height: 30px;
+}
+
+.container main section {
+  padding: 10px 3px;
+  display: flex;
+  align-items: center;
+}
+
+.compute-btn {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#range-result {
+  padding-left: 5px;
+}
+
+input[type="range"] {
+  width: 150px;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#result span {
+  background-color: yellow;
+}
+
+#result div {
+  padding: 2px 0;
+}
+
+footer {
+  padding: 20px 0 0 20px;
+  font-size: 18px;
+}
+
+footer .fa {
+  padding-right: 7px;
+}
